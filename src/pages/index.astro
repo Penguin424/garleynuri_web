@@ -9,28 +9,31 @@ import Summary from "../components/sections/Summary.astro";
 import Team from "../components/sections/Team.astro";
 import Wrapper from "../components/utils/Wrapper.astro";
 import BaseLayout from "../layout/BaseLayout.astro";
+import SocialMediaButtons from "../components/SocialMediaButtons.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Luxury Architect</title>
-	</head>
-	<body>
-		<BaseLayout>
-			<Wrapper>
-				<Header />
-				<Hero />
-				<Summary />
-				<Portfolio />
-				<About />
-				<Team />
-				<Contact />
-				<Footer />
-			</Wrapper>
-		</BaseLayout>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>garleynuri</title>
+  </head>
+  <body>
+    <SocialMediaButtons />
+    <BaseLayout>
+      <Wrapper>
+        <Header />
+        <Hero />
+        <Summary />
+        <Portfolio />
+
+        <About />
+        <Team />
+        <Contact />
+        <Footer />
+      </Wrapper>
+    </BaseLayout>
+  </body>
 </html>

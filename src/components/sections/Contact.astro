@@ -4,18 +4,23 @@ import ContactInput from "../utils/ContactInput.astro";
 ---
 
 <section class="mb-20">
-	<h2 class="text-title mb-8">keep in touch with us</h2>
-	<form class="grid gap-4 md:grid-cols-2 md:gap-8">
-		<ContactInput id="1" label="name" placeholder="input your name" />
-		<ContactInput id="2" label="company" placeholder="input your company" />
-		<ContactInput id="2" type="email" label="email" placeholder="input your email" />
-        <div>
-            <span class="block mb-2 opacity-80">services</span>
-            <div class="flex items-end gap-4 flex-wrap text-sm">
-                <CheapButton>architecture</CheapButton>
-                <CheapButton>interior</CheapButton>
-                <CheapButton>furnitures</CheapButton>
-            </div>
-        </div>
-	</form>
+  <h2 class="text-title mb-8">Mantente en contacto con nosotros</h2>
+  <form class="grid gap-4 md:grid-cols-2 md:gap-8">
+    <ContactInput id="1" label="Nombre" placeholder="ingresa tu nombre" />
+    <ContactInput id="2" label="Compañia" placeholder="ingresa tu compañia" />
+    <ContactInput
+      id="2"
+      type="email"
+      label="Correo"
+      placeholder="ingresa tu correo"
+    />
+    <div>
+      <span class="block mb-2 opacity-80">servicios</span>
+      <div class="flex items-end gap-4 flex-wrap text-sm">
+        <CheapButton>arquitectura</CheapButton>
+        <CheapButton>interiorismo</CheapButton>
+        <CheapButton>muebles</CheapButton>
+      </div>
+    </div>
+  </form>
 </section>
